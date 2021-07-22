@@ -39,6 +39,8 @@ class VideoStream:
 
 	# Variable to control when the camera is stopped
         self.stopped = False
+	
+	os.environ['DISPLAY'] = ':0'
 
     def start(self):
 	# Start the thread that reads frames from the video stream
